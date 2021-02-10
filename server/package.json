@@ -1,0 +1,34 @@
+{
+  "name": "scrum-board-project",
+  "version": "1.0.0",
+  "description": "SCRUM-board",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "server": "nodemon index.js"
+  },
+  "keywords": [
+    "MEAN",
+    "Node",
+    "js",
+    "Angular"
+  ],
+  "author": "Darya Yusipets",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "config": "^3.3.3",
+    "cors": "^2.8.5",
+    "email-validator": "^2.0.4",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.11.11",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.7"
+  }
+}
