@@ -88,6 +88,12 @@ router.put("/edit/:id", isLoggedIn, (req, res, next) => {
   );
 });
 
+router.get("/", isLoggedIn, (req, res) => {
+  Task.find()
+    .then((projects) => res.json(projects))
+    .catch((err) => res.status(400).json("Error: " + err));
+});
+
 router.get("/:project_id", isLoggedIn, (req, res) => {
   Projects.findById(req.params.project_id)
     .then((tasks) =>
